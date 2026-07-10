@@ -17,9 +17,12 @@
 # print(person(age=30,name='gadi') )   
 
 
-def person(name, ** kwlargs):
+def person(name, ** kwlargs):     #keywordlength arguments
     print("name : ", name)
     for k,v in kwlargs.items():
         print(k,":",v)
-
-person(name='Navin',age=30, loc="Pune", tech="Python")
+person(name = input("Enter name: "),
+age = int(input("Enter age: ")),
+loc = input("Enter location: "),
+tech = input("Enter technology: ")
+)
